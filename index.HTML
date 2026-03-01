@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mikhail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #1a1a1a;
+            --accent-color: #2563eb;
+            --light-gray: #e9ecef;
+            --medium-gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+        
+        /* Header section */
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .name {
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        
+        .aka {
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--medium-gray);
+        }
+        
+        .tagline {
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--medium-gray);
+            max-width: 800px;
+        }
+        
+        /* Content sections */
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 22px;
+            font-weight: 300;
+            color: var(--accent-color);
+            max-width: 800px;
+        }
+
+        .section-content2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 22px;
+            font-weight: 300;
+            color: var(rgb(98, 98, 245));
+            max-width: 800px;
+        }
+        
+        /* Links section */
+        .links-section {
+            margin-top: 60px;
+        }
+        
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 800px;
+        }
+        
+        .link-item {
+            padding: 20px 0;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        .link-item:last-child {
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .link-title {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--medium-gray);
+            margin-bottom: 8px;
+        }
+        
+        .link-url {
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--accent-color);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .link-url:hover {
+            text-decoration: underline;
+        }
+
+                /* Links section2 */
+                .links-section2 {
+            margin-top: 60px;
+        }
+        
+        .links-container2 {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 800px;
+        }
+        
+        .link-item2 {
+            padding: 20px 0;
+            border-top: 1px solid var(rgb(86, 86, 238));
+        }
+        
+        .link-item:last-child_2 {
+            border-bottom: 1px solid var(rgb(130, 130, 231));
+        }
+        
+        .link-title2 {
+            font-size: 18px;
+            font-weight: 400;
+            color: var(rgb(86, 86, 238));
+            margin-bottom: 8px;
+        }
+        
+        .link-url {
+            font-size: 20px;
+            font-weight: 300;
+            color: var(rgb(106, 106, 197));
+            text-decoration: none;
+            word-break: break-all;
+        }
+        
+        .link-url:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 16px;
+            color: var(--medium-gray);
+            padding-top: 40px;
+            border-top: 1px solid var(--light-gray);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+            
+            .container {
+                gap: 60px;
+            }
+            
+            .name {
+                font-size: 52px;
+            }
+            
+            .aka {
+                font-size: 22px;
+            }
+            
+            .section-content {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .name {
+                font-size: 42px;
+            }
+            
+            .section-content {
+                font-size: 18px;
+            }
+            
+            .link-url {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <header class="header">
+            <div class="name">
+                Mikhail
+            </div>
+            <div class="aka">or MZ</div>
+            <div class="tagline">
+                я создаю проекты на разных языках с 2021 года!
+            </div>
+        </header>
+        
+        <!-- Main content sections -->
+        <main>
+            <!-- Channel information -->
+            <section class="section">
+                <div class="section-content">
+                    <p>веду YouTube канал с 2024 года! и teleram канал с 2024 года!</p>
+                </div>
+            </section>
+
+            <!-- Channel information -->
+            <section class="section">
+                <div class="section-content">
+                    <p>на YouTube выкладываю видео с обзорами на разные windows и технику , в основном ретро технику</p>
+                </div>
+            </section>
+            
+            <!-- Programming projects -->
+            <section class="section">
+                <div class="section-content">
+                    <p>делааю разные бесполезные штуки (иногда и полезные) на HTML , Python , Delphi и тд с 2022 года!</p>
+                </div>
+            </section>
+            
+            <!-- MiCode language -->
+            <section class="section">
+                <div class="section-content">
+                    <p>совсем не давно начал разработку языка программирования MiCode !</p>
+                </div>
+            </section>
+
+                        <!-- MiCode language -->
+            <section class="section">
+                <div class="section-content">
+                    <p>так же я делаю сборки на основе разных версий windows и выкладываю их на Archive.org </p>
+                </div>
+            </section>
+
+            <!-- Links section -->
+            <section class="section links-section2">
+                <div class="links-container2">
+                    <div class="link-item2">
+                        <div class="section-content2">ещё я брал интервью у Daniel Myslivets</div>
+                        <div class="section-content2">посмотреть можно на YouTube:</div>
+                        <a href="https://youtu.be/rvHyk2jMLWs?si=6IifMSU3PDKVMvas" class="link-url" target="_blank">https://youtu.be/rvHyk2jMLWs?si=6IifMSU3PDKVMvas</a>
+                    </div>
+
+                                <!-- Links section -->
+            <section class="section links-section2">
+                <div class="links-container2">
+                    <div class="link-item2">
+                        <div class="section-content2">иногда от скуки я фоткаю под красивым ракурсом всё что со мной рядом</div>
+                        <div class="section-content2">и эти фото попадают в сборки WIndows , хоть и не всегда</div>
+                        <div class="link-title">хобби, не более</div>
+                    </div>
+
+            
+            <!-- Links section -->
+            <section class="section links-section">
+                <div class="links-container">
+                    <div class="link-item">
+                        <div class="link-title">Telegram канал:</div>
+                        <a href="https://t.me/mitgcmz" class="link-url" target="_blank">https://t.me/mitgcmz</a>
+                    </div>
+                    
+                    <div class="link-item">
+                        <div class="link-title">YouTube канал:</div>
+                        <a href="https://youtube.com/@mik_han3?si=Jdv97wetRLgRfS2q" class="link-url" target="_blank">https://youtube.com/@mik_han3?si=Jdv97wetRLgRfS2q</a>
+                    </div>
+
+                    <div class="link-item">
+                        <div class="link-title">второй YouTube канал:</div>
+                        <a href="https://youtube.com/@mikhailz-b6n?si=2oUZQiOt3oWGdYy7" class="link-url" target="_blank">https://youtube.com/@mikhailz-b6n?si=2oUZQiOt3oWGdYy7</a>
+                    </div>
+                    
+                    <div class="link-item">
+                        <div class="link-title">TikTok:</div>
+                        <a href="https://www.tiktok.com/@mik_han3?_r=1&_t=ZS-92J2zDzg3SX" class="link-url" target="_blank">https://www.tiktok.com/@mik_han3?_r=1&_t=ZS-92J2zDzg3SX</a>
+                    </div>
+                </div>
+
+                                    <div class="link-item">
+                        <div class="link-title">сообщество в Microsoft Teams:</div>
+                        <a href="https://teams.live.com/l/community/FEAV5TVVRulht5JLgM?v=g1" class="link-url" target="_blank">https://teams.live.com/l/community/FEAV5TVVRulht5JLgM?v=g1</a>
+                    </div>
+                </div>
+
+                                                    <div class="link-item">
+                        <div class="link-title">Archive.org:</div>
+                        <a href="https://archive.org/details/@mv_system_inc" class="link-url" target="_blank">https://archive.org/details/@mv_system_inc</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="footer">
+            <p>© 2026 Mikhail (MZ). All rights reserved.</p>
+
+        <div class="footer">
+            <p>Thank you!</p>
+        </div>
+        </div>
+    </div>
+    <!-- Подключаем внешний JS файл -->
+    <script src="script.js"></script>
+</body>
+</html>
